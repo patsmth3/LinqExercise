@@ -33,7 +33,7 @@ namespace LinqExercise
 
             Console.WriteLine("---------------------------------------------");
 
-            var desc = numbers.OrderBy(num => num);
+            var desc = numbers.OrderByDescending(num => num);
 
             Console.WriteLine("Descensing Order");
 
@@ -69,7 +69,7 @@ namespace LinqExercise
             Console.WriteLine("---------------------------------------------");
 
             //Change the value at index 4 to your age, then print the numbers in decsending order
-            numbers[4] = 32;
+            numbers[4] = 32;  //numbers.SetVValue(32, 4); lamda solutioh
 
             foreach (var item in numbers.OrderByDescending(num => num))
             {
