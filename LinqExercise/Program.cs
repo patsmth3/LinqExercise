@@ -85,13 +85,13 @@ namespace LinqExercise
             //Order this in acesnding order by FirstName.
             var filtered = employees.Where(person => person.FirstName.StartsWith('C') ||
                                                      person.FirstName.StartsWith('S'))
-                .OrderBy(person => person.FirstName);
+                                                    .OrderBy(person => person.FirstName);
 
             Console.WriteLine("Employees with the first name starting with either a C or S");
 
             foreach (var employee in filtered)
             {
-                Console.WriteLine(employee.FirstName);
+                Console.WriteLine(employee.FullName);
             }
 
             Console.WriteLine("---------------------------------------------");
