@@ -99,7 +99,7 @@ namespace LinqExercise
             //Print all the employees' FullName and Age who are over the age 26 to the console.
             //Order this by Age first and then by FirstName in the same result.
             var overTwentySix = employees.Where(emp => emp.Age > 26)
-                .OrderBy(emp => emp.Age).ThenBy(emp => emp.FirstName)
+                .OrderBy(emp => emp.Age).ThenBy(emp => emp.FullName)
                 .ThenBy(emp => emp.YearsOfExperience);
             
             Console.WriteLine("Employees who are over the age of 26");
